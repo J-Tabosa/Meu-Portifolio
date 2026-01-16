@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #000000, #373170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profileInit {
+    background-image: url('assets/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.profileInit h1 {
+    color: aliceblue;
+    font-size: 28px;
+    margin-right: 32px;
+    flex: 1;
+}
+
+.profileInit img {
+    height: 220px;
+    border-radius: 50%;
+    border: 5px dashed white;
+}
+
+.navigationBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 50px;
+    background-color: black;
+    border-top: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+
+.navigationBar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigationBar a:hover {
+    color: #a9a4ff;
+}
+
+.conteudoPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card h2 {
+    color: #373170;
+}
+
+.card p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.botao {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #373170;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #000000;
+}
+
+.linkCard {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.linkCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(169,164,255,0.6);
+    cursor: pointer;
+}
+/* BARRA DE CONTATO */
+.contactBar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 10px;
+    background-color: #111;
+}
+
+.contactBar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contactBar a:hover {
+    color: #a9a4ff;
+}
+
+/* IMAGENS DOS CARDS */
+.imageBox {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageGroup {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.imageGroup img {
+    width: 45%;
+    height: 100px;
+    object-fit: contain;
+}
+/* FOOTER CONTATO */
+/* FOOTER CONTATO - LAYOUT FINAL */
+.footerContato {
+    width: 100%;
+    background-color: #0b0b0b;
+    color: aliceblue;
+    border-top: 1px solid aliceblue;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    padding: 32px 64px;
+}
+
+/* LADO ESQUERDO */
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    font-size: 18px;
+}
+
+/* LINKS */
+.footerLeft a {
+    color: #a9a4ff;
+    text-decoration: none;
+}
+
+.footerLeft a:hover {
+    text-decoration: underline;
+}
+
+/* LADO DIREITO */
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TÍTULO */
+.footerRight h3 {
+    margin-bottom: 12px;
+}
+
+/* FORM */
+.footerRight form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerRight input,
+.footerRight textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.footerRight textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* BOTÃO */
+.footerRight button {
+    width: 100%;
+    background-color: #373170;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.footerRight button:hover {
+    background-color: black;
+}
+
+.imgsimbolo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .footerContato {
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
+}
+
+ul li {
+    margin-left: 18px;
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+.skillsGroup h3 {
+    color: #373170;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.skillsGroup ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skillsGroup li {
+    background-color: #f0f0ff;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: 1px solid #d6d4ff;
+}
