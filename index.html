@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de João Victor Tabosa — Analista de Sistemas, desenvolvedor web e GameDev.">
     <title>Portfólio | João Victor Tabosa</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,10 +11,17 @@
 
 <header>
     <div class="profileInit">
-        <h1>
-            Olá Mundo! Me chamo João Victor Tabosa, sou Analista de Sistemas e GameDev, 
-            seja muito bem-vindo ao meu portfólio.
-        </h1>
+        <div class="heroText">
+            <span class="heroEyebrow">ANALISTA DE SISTEMAS • GAMEDEV • DESENVOLVEDOR</span>
+            <h1>
+                Olá Mundo! Me chamo João Victor Tabosa, sou Analista de Sistemas e GameDev,
+                seja muito bem-vindo ao meu portfólio.
+            </h1>
+            <div class="heroActions">
+                <a class="heroButton primary" href="#projetos">Ver meus projetos</a>
+                <a class="heroButton" href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
         <img src="assets/foto.jpg" alt="Foto de João Victor">
     </div>
 
@@ -21,80 +29,212 @@
         <a href="description.html">Pessoal</a>
         <a href="profissional.html">Profissional</a>
         <a href="history.html">Acadêmico</a>
+        <a href="#projetos">Projetos</a>
+        <a href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
 </header>
 
-<main class="conteudoPrincipal">
+<main>
+    <section class="conteudoPrincipal" aria-label="Perfis do portfólio">
 
-    <!-- PERFIL PESSOAL -->
-    <a href="description.html" class="linkCard">
-        <section class="card">
-            <h2>Perfil Pessoal</h2>
+        <a href="description.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Pessoal</h2>
 
-            <div class="imageBox">
-                <img src="assets/godot.jpg" alt="Godot Engine">
-            </div>
+                <div class="imageBox">
+                    <img src="assets/godot.jpg" alt="Godot Engine">
+                </div>
 
+                <p>
+                    Sou aspirante a programador, game designer e designer gráfico, apaixonado por tecnologia,
+                    jogos digitais e soluções criativas, sempre buscando aprender novas ferramentas e
+                    aprimorar minhas habilidades técnicas e artísticas, com especial interesse em
+                    desenvolvimento de jogos, interfaces e experiências interativas.
+                </p>
+            </section>
+        </a>
+
+        <a href="profissional.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Profissional</h2>
+
+                <div class="imageGroup">
+                    <img src="assets/inove.png" alt="Logo iNove System">
+                    <img src="assets/suporte.webp" alt="Suporte de TI">
+                </div>
+
+                <p>
+                    Atuei como estagiário em Suporte de TI na iNove System, trabalhando com sistemas PDV
+                    em modelo SaaS, oferecendo suporte técnico, treinamentos presenciais, manutenção de
+                    hardware, automação de processos com Python, além de consultas e correções em bancos
+                    de dados SQL Server, sempre focado em otimização, estabilidade e eficiência dos sistemas.
+                </p>
+            </section>
+        </a>
+
+        <a href="history.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Acadêmico</h2>
+
+                <div class="imageBox">
+                    <img src="assets/IFS.jpg" alt="Instituto Federal de Sergipe">
+                </div>
+
+                <p>
+                    Tecnólogo em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Sergipe,
+                    com experiência como monitor de Banco de Dados, bolsista PIBIC, autor de artigo
+                    científico publicado no ERBASE 2024, além de histórico como líder de clube de programação
+                    em jogos digitais e vice-presidente de conselho estudantil durante o ensino médio.
+                </p>
+            </section>
+        </a>
+
+    </section>
+
+    <section class="projectsSection" id="projetos">
+        <div class="sectionHeading">
+            <span>PORTFÓLIO TÉCNICO</span>
+            <h2>Meus projetos</h2>
             <p>
-                Sou aspirante a programador, game designer e designer gráfico, apaixonado por tecnologia,
-                jogos digitais e soluções criativas, sempre buscando aprender novas ferramentas e 
-                aprimorar minhas habilidades técnicas e artísticas, com especial interesse em 
-                desenvolvimento de jogos, interfaces e experiências interativas.
+                Projetos públicos que desenvolvi ou dos quais participei, reunindo desenvolvimento web,
+                ferramentas pessoais e desenvolvimento de jogos.
             </p>
-        </section>
-    </a>
+        </div>
 
-    <!-- PERFIL PROFISSIONAL -->
-    <a href="profissional.html" class="linkCard">
-        <section class="card">
-            <h2>Perfil Profissional</h2>
+        <div class="projectsGrid">
+            <article class="projectCard featured">
+                <div class="projectTop">
+                    <span class="projectIcon">🐉</span>
+                    <span class="projectStatus">Em desenvolvimento</span>
+                </div>
+                <h3>RPG System</h3>
+                <p>
+                    Plataforma web para jogadores e mestres de RPG, com fichas de personagem, gerador,
+                    campanhas, Combat Tracker, Monstropédia, catálogos de magias e itens e gestor de conteúdo.
+                </p>
+                <div class="projectTags">
+                    <span>JavaScript</span><span>HTML</span><span>CSS</span><span>JSON</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://j-tabosa.github.io/RPG-Systema/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
+                    <a href="https://github.com/J-Tabosa/RPG-Systema" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </article>
 
-            <div class="imageGroup">
-                <img src="assets/inove.png" alt="Banco de Dados">
-                <img src="assets/suporte.webp" alt="Banco de Dados">
+            <article class="projectCard">
+                <div class="projectTop">
+                    <span class="projectIcon">🌊</span>
+                    <span class="projectStatus">GameDev</span>
+                </div>
+                <h3>Drowned</h3>
+                <p>
+                    RPG isométrico desenvolvido em Godot. O projeto reúne combate, movimentação, diálogos,
+                    personagens, documentação técnica e um GDD que registra a visão e evolução do jogo.
+                </p>
+                <div class="projectTags">
+                    <span>Godot</span><span>GDScript</span><span>Game Design</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://github.com/J-Tabosa/Drowned" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a>
+                </div>
+            </article>
 
+            <article class="projectCard">
+                <div class="projectTop">
+                    <span class="projectIcon">⚔️</span>
+                    <span class="projectStatus">GameDev</span>
+                </div>
+                <h3>Kill The Hero</h3>
+                <p>
+                    Projeto de jogo desenvolvido em Godot, com cenas, scripts, recursos gráficos e builds
+                    versionadas. Um dos projetos utilizados para aprofundar prática com desenvolvimento de jogos.
+                </p>
+                <div class="projectTags">
+                    <span>Godot</span><span>GDScript</span><span>2D</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://github.com/J-Tabosa/KillTheHeroGame" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a>
+                </div>
+            </article>
+
+            <article class="projectCard">
+                <div class="projectTop">
+                    <span class="projectIcon">🛍️</span>
+                    <span class="projectStatus">Web</span>
+                </div>
+                <h3>AlinartBase</h3>
+                <p>
+                    Catálogo digital da Alinart com filtros, busca, carregamento progressivo, carrinho
+                    persistente e preparação de pedidos para WhatsApp e JSON.
+                </p>
+                <div class="projectTags">
+                    <span>JavaScript</span><span>HTML</span><span>CSS</span><span>JSON</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://j-tabosa.github.io/AlinartBase/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
+                    <a href="https://github.com/J-Tabosa/AlinartBase" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </article>
+
+            <article class="projectCard">
+                <div class="projectTop">
+                    <span class="projectIcon">💰</span>
+                    <span class="projectStatus">PWA / Mobile</span>
+                </div>
+                <h3>Agenda Financeira</h3>
+                <p>
+                    Aplicação pessoal otimizada para celular para registrar gastos, entradas, cartões,
+                    reservas e projeções financeiras sem integração direta com contas bancárias.
+                </p>
+                <div class="projectTags">
+                    <span>JavaScript</span><span>PWA</span><span>HTML</span><span>CSS</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://j-tabosa.github.io/Agenda-Financeira-MOB-/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
+                    <a href="https://github.com/J-Tabosa/Agenda-Financeira-MOB-" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </article>
+
+            <article class="projectCard">
+                <div class="projectTop">
+                    <span class="projectIcon">👥</span>
+                    <span class="projectStatus">Projeto em equipe</span>
+                </div>
+                <h3>Projeto Final — Portfólio de Equipe</h3>
+                <p>
+                    Trabalho colaborativo desenvolvido em equipe, reunindo os perfis dos integrantes em uma
+                    interface web responsiva com navegação entre os portfólios individuais.
+                </p>
+                <div class="projectTags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Equipe</span>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://j-tabosa.github.io/ProjetoFinal/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
+                    <a href="https://github.com/J-Tabosa/ProjetoFinal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="githubCallout">
+            <div>
+                <strong>Quer ver o código e acompanhar os próximos projetos?</strong>
+                <p>Todos os meus repositórios públicos estão disponíveis no meu perfil do GitHub.</p>
             </div>
-
-            <p>
-                Atuei como estagiário em Suporte de TI na iNove System, trabalhando com sistemas PDV 
-                em modelo SaaS, oferecendo suporte técnico, treinamentos presenciais, manutenção de 
-                hardware, automação de processos com Python, além de consultas e correções em bancos
-                de dados SQL Server, sempre focado em otimização, estabilidade e eficiência dos sistemas.
-            </p>
-        </section>
-    </a>
-
-    <!-- PERFIL ACADÊMICO -->
-    <a href="history.html" class="linkCard">
-        <section class="card">
-            <h2>Perfil Acadêmico</h2>
-
-            <div class="imageBox">
-                <img src="assets/IFS.jpg" alt="Imagem acadêmica">
-            </div>
-
-            <p>
-                Tecnólogo em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Sergipe,
-                com experiência como monitor de Banco de Dados, bolsista PIBIC, autor de artigo 
-                científico publicado no ERBASE 2024, além de histórico como líder de clube de programação
-                em jogos digitais e vice-presidente de conselho estudantil durante o ensino médio.
-            </p>
-        </section>
-    </a>
-
+            <a href="https://github.com/J-Tabosa?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os repositórios ↗</a>
+        </div>
+    </section>
 </main>
 
 <footer class="footerContato">
 
-    <!-- LADO ESQUERDO -->
     <div class="footerLeft">
         <p>📞 Telefone: (79) 98803-0856</p>
-        <p>📸 Instagram: <a href="https://instagram.com/el_tabosa" target="_blank">@el_tabosa</a></p>
-        <p>🐦 Twitter: <a href="https://twitter.com/el_tabosa" target="_blank">@el_tabosa</a></p>
-        <p>👾 Itch.io: <a href="https://kammish.itch.io/" target="_blank">kammish.itch.io</a></p>
+        <p>💻 GitHub: <a href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">github.com/J-Tabosa</a></p>
+        <p>📸 Instagram: <a href="https://instagram.com/el_tabosa" target="_blank" rel="noopener noreferrer">@el_tabosa</a></p>
+        <p>🐦 Twitter: <a href="https://twitter.com/el_tabosa" target="_blank" rel="noopener noreferrer">@el_tabosa</a></p>
+        <p>👾 Itch.io: <a href="https://kammish.itch.io/" target="_blank" rel="noopener noreferrer">kammish.itch.io</a></p>
     </div>
 
-    <!-- LADO DIREITO -->
     <div class="footerRight">
         <h3>Entre em contato</h3>
 
