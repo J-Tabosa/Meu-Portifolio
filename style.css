@@ -580,3 +580,965 @@ html {
         text-align: center;
     }
 }
+
+
+/* =========================================================
+   REDESIGN 2026 — HOME / PROJETOS
+   Escopado para não alterar as páginas antigas do portfólio.
+========================================================= */
+
+.homePage,
+.projectsPageBody {
+    --bg-deep: #11101c;
+    --bg-purple: #292653;
+    --purple: #5f58b8;
+    --purple-soft: #7770d3;
+    --lavender: #a9a4ff;
+    --blue-soft: #8da6df;
+    --paper: #f3f1fa;
+    --ink: #111018;
+    --muted: #c9c6dc;
+    --line: rgba(255, 255, 255, 0.15);
+
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 80% 0%, rgba(95, 88, 184, 0.24), transparent 35%),
+        linear-gradient(135deg, #11101c 0%, #1d1a39 52%, #292653 100%);
+    color: white;
+    font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.homePage a,
+.projectsPageBody a {
+    color: inherit;
+}
+
+.homeHeader,
+.projectsHeader {
+    width: min(1240px, calc(100% - 36px));
+    margin: 18px auto 0;
+}
+
+.homeNav {
+    min-height: 62px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 28px;
+    padding: 10px 12px 10px 18px;
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 18px;
+    background: rgba(9, 8, 18, .58);
+    backdrop-filter: blur(14px);
+}
+
+.homeBrand {
+    font-size: 23px;
+    line-height: 1;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: -1.2px;
+}
+
+.homeBrand span {
+    color: var(--lavender);
+}
+
+.homeNavLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.homeNavLinks a,
+.navGithub {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #dedbea;
+    transition: color .2s ease, transform .2s ease, background .2s ease;
+}
+
+.homeNavLinks a:hover {
+    color: white;
+}
+
+.navGithub {
+    padding: 10px 14px;
+    border-radius: 11px;
+    background: #f1eff9;
+    color: #1c1933 !important;
+}
+
+.navGithub:hover {
+    transform: translateY(-2px);
+    background: white;
+}
+
+.homeShell,
+.projectsShell {
+    width: min(1240px, calc(100% - 36px));
+    margin: 24px auto 70px;
+}
+
+.homeHero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(300px, .55fr);
+    gap: 18px;
+    min-height: 560px;
+}
+
+.heroBlock {
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.heroIntro {
+    padding: clamp(28px, 5vw, 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+        linear-gradient(145deg, rgba(146, 170, 226, .96), rgba(103, 95, 199, .97));
+    color: var(--ink);
+}
+
+.blockNumber {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.helloLine {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.heroCopy h1 {
+    font-size: clamp(62px, 8vw, 112px);
+    line-height: .82;
+    letter-spacing: -6px;
+    margin: 0;
+}
+
+.heroDescription {
+    max-width: 610px;
+    margin-top: 28px;
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 1.55;
+    font-weight: 550;
+}
+
+.heroQuickLinks {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.heroQuickLinks a {
+    padding: 11px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(17,16,24,.22);
+    background: rgba(255,255,255,.18);
+    font-size: 13px;
+    font-weight: 800;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.heroQuickLinks a:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,.34);
+}
+
+.heroQuickLinks span {
+    margin-left: 9px;
+}
+
+.heroPortrait {
+    background: #252247;
+}
+
+.heroPortrait > img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+    display: block;
+    filter: saturate(.92) contrast(1.03);
+}
+
+.heroPortrait::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(17,16,28,.78), transparent 48%);
+    pointer-events: none;
+}
+
+.portraitLabel {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    right: 20px;
+    bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.homeBento {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+}
+
+.homeTile {
+    min-height: 390px;
+    border-radius: 26px;
+    padding: 26px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.homeTile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 45px rgba(0,0,0,.22);
+}
+
+.tilePersonal {
+    grid-column: span 7;
+    background: #f0eef7;
+    color: #171522;
+}
+
+.tileProfessional {
+    grid-column: span 5;
+    background: #5f58b8;
+    color: white;
+}
+
+.tileAcademic {
+    grid-column: span 5;
+    background: #8da6df;
+    color: #111018;
+}
+
+.tileProjects {
+    grid-column: span 7;
+    background: #343168;
+    color: white;
+}
+
+.tileTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.tileArrow {
+    font-size: 28px;
+    line-height: .7;
+    transition: transform .25s ease;
+}
+
+.homeTile:hover .tileArrow {
+    transform: translate(4px, -4px);
+}
+
+.tileEyebrow {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    opacity: .72;
+}
+
+.homeTile h2 {
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: .93;
+    letter-spacing: -3px;
+    margin-bottom: 14px;
+}
+
+.homeTile p:not(.tileEyebrow) {
+    max-width: 570px;
+    line-height: 1.55;
+    font-size: 15px;
+}
+
+.tileImage {
+    width: 180px;
+    height: 128px;
+    position: absolute;
+    right: 24px;
+    bottom: 22px;
+    border-radius: 19px;
+    overflow: hidden;
+    transform: rotate(2deg);
+}
+
+.tileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tilePersonal > div:nth-child(2) {
+    max-width: calc(100% - 180px);
+}
+
+.miniVisual,
+.projectCategories {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.miniVisual span,
+.projectCategories span {
+    border: 1px solid rgba(255,255,255,.24);
+    background: rgba(255,255,255,.10);
+    border-radius: 999px;
+    padding: 8px 11px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.academicLogo {
+    width: 112px;
+    height: 86px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    margin: auto 0 18px auto;
+}
+
+.academicLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homeContact {
+    margin-top: 18px;
+    padding: clamp(28px, 5vw, 52px);
+    border-radius: 28px;
+    background: #0d0c15;
+    border: 1px solid rgba(255,255,255,.10);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+}
+
+.contactEyebrow {
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    font-weight: 800;
+    color: var(--lavender);
+}
+
+.homeContact h2 {
+    margin-top: 8px;
+    font-size: clamp(32px, 4vw, 56px);
+    letter-spacing: -2px;
+    max-width: 660px;
+}
+
+.contactActions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.contactActions a {
+    padding: 11px 14px;
+    border-radius: 11px;
+    background: #28254d;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.homeFooter {
+    width: min(1240px, calc(100% - 36px));
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: #aaa6bb;
+    font-size: 11px;
+    letter-spacing: .4px;
+}
+
+.homeFooter a {
+    text-decoration: none;
+}
+
+/* -------- Página de projetos -------- */
+
+.projectsIntro {
+    min-height: 480px;
+    padding: clamp(30px, 6vw, 72px);
+    border-radius: 28px;
+    background:
+        linear-gradient(150deg, rgba(141,166,223,.96), rgba(95,88,184,.95));
+    color: #111018;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectsIntro h1 {
+    margin-top: 32px;
+    font-size: clamp(70px, 10vw, 132px);
+    line-height: .77;
+    letter-spacing: -7px;
+}
+
+.projectsIntro > p {
+    max-width: 760px;
+    margin-top: 34px;
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.projectJumpLinks {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.projectJumpLinks a {
+    padding: 10px 14px;
+    border: 1px solid rgba(17,16,24,.20);
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 850;
+    background: rgba(255,255,255,.16);
+}
+
+.projectCategory {
+    padding-top: 80px;
+}
+
+.categoryHeader {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: end;
+    gap: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.14);
+}
+
+.categoryHeader > span {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: var(--lavender);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.categoryHeader p {
+    color: var(--lavender);
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    font-weight: 900;
+}
+
+.categoryHeader h2 {
+    margin-top: 6px;
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1;
+    letter-spacing: -2.5px;
+}
+
+.projectShowcase {
+    min-height: 390px;
+    display: grid;
+    grid-template-columns: minmax(220px, 290px) minmax(0, 1fr);
+    gap: 0;
+    align-items: center;
+    padding: 42px 0;
+}
+
+.projectShowcase.reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 290px);
+}
+
+.projectShowcase.reverse .projectMedia {
+    order: 2;
+}
+
+.projectShowcase.reverse .projectInfo {
+    order: 1;
+}
+
+.projectMedia {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: #2d295b;
+    box-shadow: 0 18px 40px rgba(0,0,0,.26);
+}
+
+.projectMedia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.projectInfo {
+    min-width: 0;
+}
+
+.projectShowcase:not(.reverse) .projectInfo {
+    margin-left: -26px;
+}
+
+.projectShowcase.reverse .projectInfo {
+    margin-right: -26px;
+}
+
+.projectTitleLine {
+    min-height: 72px;
+    padding: 0 18px 0 34px;
+    display: flex;
+    align-items: end;
+    gap: 14px;
+    position: relative;
+    z-index: 3;
+}
+
+.reverse .projectTitleLine {
+    padding-left: 0;
+    padding-right: 34px;
+}
+
+.projectTitleLine h3 {
+    flex-shrink: 0;
+    margin: 0;
+    color: white;
+    font-size: clamp(36px, 5vw, 66px);
+    line-height: .9;
+    letter-spacing: -3px;
+}
+
+.projectTitleLine > span {
+    flex: 1;
+    height: 3px;
+    background: white;
+    position: relative;
+    margin-bottom: 7px;
+    min-width: 34px;
+}
+
+.projectTitleLine > span::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.projectTextBlock {
+    margin-top: 5px;
+    min-height: 225px;
+    padding: 28px 28px 22px 44px;
+    border-radius: 0 25px 25px 0;
+    background:
+        linear-gradient(135deg, rgba(103,95,199,.96), rgba(72,66,142,.98));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 14px 32px rgba(0,0,0,.16);
+}
+
+.reverse .projectTextBlock {
+    padding-left: 28px;
+    padding-right: 44px;
+    border-radius: 25px 0 0 25px;
+}
+
+.projectTextBlock > p {
+    color: #f4f2ff;
+    max-width: 760px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1.7;
+}
+
+.projectBottom {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.projectTech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.projectTech span {
+    padding: 6px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.18);
+    background: rgba(255,255,255,.09);
+    font-size: 9px;
+    letter-spacing: .7px;
+    font-weight: 850;
+}
+
+.projectBottom > a {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    color: #dedbff;
+}
+
+.projectBottom b {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #f2f0fa;
+    color: #5f58b8;
+    font-size: 22px;
+    line-height: 1;
+    transition: transform .2s ease;
+}
+
+.projectBottom > a:hover b {
+    transform: rotate(90deg);
+}
+
+.compactProject .projectTextBlock {
+    min-height: 190px;
+}
+
+.projectsEnd {
+    margin-top: 80px;
+    padding: 36px;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(9,8,18,.45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.projectsEnd p {
+    max-width: 670px;
+    line-height: 1.5;
+    color: #d1cede;
+}
+
+.projectsEnd div {
+    display: flex;
+    gap: 8px;
+}
+
+.projectsEnd a {
+    padding: 10px 13px;
+    border-radius: 10px;
+    background: #302c60;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .homeNav {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .homeNavLinks {
+        gap: 16px;
+    }
+
+    .homeHero {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .heroPortrait > img {
+        min-height: 420px;
+        max-height: 620px;
+    }
+
+    .tilePersonal,
+    .tileProfessional,
+    .tileAcademic,
+    .tileProjects {
+        grid-column: span 6;
+    }
+
+    .tilePersonal > div:nth-child(2) {
+        max-width: 100%;
+    }
+
+    .tileImage {
+        width: 130px;
+        height: 92px;
+    }
+
+    .projectShowcase,
+    .projectShowcase.reverse {
+        grid-template-columns: 220px 1fr;
+    }
+
+    .projectShowcase.reverse .projectMedia,
+    .projectShowcase.reverse .projectInfo {
+        order: initial;
+    }
+
+    .projectShowcase.reverse .projectInfo {
+        margin-right: 0;
+        margin-left: -26px;
+    }
+
+    .reverse .projectTitleLine {
+        padding: 0 18px 0 34px;
+    }
+
+    .reverse .projectTextBlock {
+        padding: 28px 28px 22px 44px;
+        border-radius: 0 25px 25px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .homeHeader,
+    .projectsHeader,
+    .homeShell,
+    .projectsShell,
+    .homeFooter {
+        width: min(100% - 22px, 1240px);
+    }
+
+    .homeNav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 12px;
+    }
+
+    .homeNavLinks {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 18px;
+        padding: 5px 2px 2px;
+        scrollbar-width: none;
+    }
+
+    .homeNavLinks::-webkit-scrollbar {
+        display: none;
+    }
+
+    .homeNavLinks a {
+        white-space: nowrap;
+    }
+
+    .heroIntro {
+        min-height: 520px;
+        padding: 28px 22px;
+    }
+
+    .heroCopy h1 {
+        font-size: clamp(58px, 20vw, 90px);
+        letter-spacing: -5px;
+    }
+
+    .heroPortrait > img {
+        min-height: 390px;
+    }
+
+    .homeBento {
+        grid-template-columns: 1fr;
+    }
+
+    .tilePersonal,
+    .tileProfessional,
+    .tileAcademic,
+    .tileProjects {
+        grid-column: auto;
+        min-height: 340px;
+    }
+
+    .tileImage {
+        width: 115px;
+        height: 84px;
+    }
+
+    .homeTile h2 {
+        font-size: 48px;
+    }
+
+    .homeContact,
+    .projectsEnd {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactActions {
+        justify-content: flex-start;
+    }
+
+    .projectsIntro {
+        min-height: 430px;
+        padding: 30px 22px;
+    }
+
+    .projectsIntro h1 {
+        font-size: clamp(66px, 22vw, 96px);
+        letter-spacing: -5px;
+    }
+
+    .projectCategory {
+        padding-top: 58px;
+    }
+
+    .categoryHeader {
+        grid-template-columns: 42px 1fr;
+    }
+
+    .projectShowcase,
+    .projectShowcase.reverse {
+        grid-template-columns: 1fr;
+        padding: 28px 0 42px;
+    }
+
+    .projectShowcase .projectMedia,
+    .projectShowcase.reverse .projectMedia {
+        order: 1;
+        width: min(74vw, 280px);
+        margin-bottom: -24px;
+    }
+
+    .projectShowcase:not(.reverse) .projectMedia {
+        margin-left: 12px;
+    }
+
+    .projectShowcase.reverse .projectMedia {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    .projectShowcase .projectInfo,
+    .projectShowcase.reverse .projectInfo {
+        order: 2;
+        margin: 0;
+    }
+
+    .projectTitleLine,
+    .reverse .projectTitleLine {
+        min-height: auto;
+        padding: 42px 8px 10px;
+        align-items: end;
+    }
+
+    .projectTitleLine h3 {
+        font-size: clamp(38px, 12vw, 58px);
+        letter-spacing: -2.5px;
+    }
+
+    .projectTextBlock,
+    .reverse .projectTextBlock {
+        min-height: 0;
+        padding: 24px 20px 20px;
+        border-radius: 22px;
+    }
+
+    .projectTextBlock > p {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .projectBottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .projectBottom > a {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .projectsEnd div {
+        flex-wrap: wrap;
+    }
+
+    .homeFooter {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .navGithub {
+        font-size: 11px;
+        padding: 9px 11px;
+    }
+
+    .heroCopy h1,
+    .projectsIntro h1 {
+        letter-spacing: -4px;
+    }
+
+    .homeTile {
+        padding: 22px;
+    }
+
+    .tileImage {
+        opacity: .9;
+    }
+
+    .projectTitleLine h3 {
+        max-width: 85%;
+    }
+}
