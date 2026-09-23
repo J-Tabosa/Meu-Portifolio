@@ -1394,3 +1394,210 @@ html {
         padding: 16px 14px;
     }
 }
+
+
+/* =========================================================
+   PESSOAL — PERFIL E INTERESSES
+========================================================= */
+
+.personalPage {
+    width: min(1080px, calc(100% - 34px));
+    margin: 34px auto 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.personalIntro {
+    padding: 34px 36px;
+    border-radius: 12px;
+    color: #f3f7ff;
+    background:
+        radial-gradient(circle at 92% 10%, rgba(69, 124, 240, .16), transparent 28%),
+        linear-gradient(135deg, #07101f, #0a1934);
+    border: 1px solid rgba(70, 126, 240, .52);
+    box-shadow:
+        0 0 22px rgba(36, 91, 255, .18),
+        0 18px 38px rgba(0, 0, 0, .24);
+}
+
+.personalEyebrow,
+.personalBlockLabel,
+.personalClosing > span {
+    display: inline-block;
+    color: #72a2ff;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.7px;
+}
+
+.personalIntro h2 {
+    max-width: 850px;
+    margin: 9px 0 20px;
+    color: #f8fbff;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.08;
+    letter-spacing: -1px;
+}
+
+.personalIntroText {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.personalIntroText p {
+    color: #c7d3e6;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.personalTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.personalTags span {
+    padding: 7px 10px;
+    border-radius: 6px;
+    color: #c7dcff;
+    background: rgba(20, 48, 96, .56);
+    border: 1px solid rgba(81, 139, 255, .38);
+    box-shadow: 0 0 10px rgba(44, 102, 235, .08);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.personalGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.personalBlock {
+    position: relative;
+    min-height: 320px;
+    padding: 26px 25px 24px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f6f9 100%);
+    border: 1px solid #e0e4ec;
+    box-shadow:
+        0 12px 26px rgba(0, 0, 0, .20),
+        inset 0 1px 0 rgba(255, 255, 255, .85);
+    overflow: hidden;
+}
+
+.personalBlock::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle at top right, rgba(49, 87, 180, .12), transparent 66%);
+    pointer-events: none;
+}
+
+.personalBlockNumber {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    color: rgba(55, 49, 112, .12);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.personalBlock h3 {
+    position: relative;
+    z-index: 1;
+    margin: 7px 0 14px;
+    padding-right: 46px;
+    color: #20205f;
+    font-size: 22px;
+    line-height: 1.15;
+}
+
+.personalBlock p {
+    position: relative;
+    z-index: 1;
+    color: #3d4350;
+    font-size: 14px;
+    line-height: 1.68;
+    margin: 0;
+}
+
+.personalBlock p + p {
+    margin-top: 13px;
+}
+
+.personalBlock strong {
+    color: #262a65;
+}
+
+.personalClosing {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 23px 26px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(7, 15, 31, .98), rgba(10, 25, 52, .98));
+    border: 1px solid rgba(67, 125, 241, .42);
+    box-shadow: 0 0 16px rgba(45, 98, 230, .12);
+}
+
+.personalClosing p {
+    color: #c7d3e6;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 820px) {
+    .personalIntroText,
+    .personalGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .personalBlock {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .personalPage {
+        width: min(100% - 18px, 1080px);
+        margin: 22px auto 46px;
+    }
+
+    .personalIntro {
+        padding: 24px 19px;
+        border-radius: 9px;
+    }
+
+    .personalIntro h2 {
+        font-size: clamp(27px, 9vw, 36px);
+    }
+
+    .personalIntroText {
+        gap: 14px;
+    }
+
+    .personalBlock {
+        padding: 22px 18px 20px;
+    }
+
+    .personalBlock h3 {
+        font-size: 20px;
+    }
+
+    .personalClosing {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        padding: 20px 18px;
+    }
+}
