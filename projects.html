@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projetos pessoais de João Victor Tabosa em GameDev, WebDev e estudos.">
+    <meta name="description" content="Projetos pessoais de João Victor Tabosa em Desenvolvimento Web e GameDev.">
     <title>Projetos | João Victor Tabosa</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,17 +28,134 @@
         <span class="projectsMiniLabel">PORTFÓLIO TÉCNICO</span>
         <h2>Projetos que saíram da ideia e viraram código.</h2>
         <p>
-            Aqui ficam os trabalhos que melhor representam o que venho construindo. Separei os projetos
-            em GameDev, WebDev e Estudos, dando mais espaço aos que considero mais completos e deixando
-            experimentos menores em listas compactas.
+            Aqui ficam os trabalhos que melhor representam o que venho construindo.
+            A apresentação está organizada em duas frentes principais: Desenvolvimento Web,
+            com aplicações e ferramentas voltadas para uso real, e Jogos, onde exploro gameplay,
+            narrativa, prototipagem e Game Design.
         </p>
     </section>
 
-    <section class="projectCategoryBlock" id="gamedev">
+<section class="projectCategoryBlock" id="webdev">
         <div class="projectCategoryHeader">
             <span>01</span>
             <div>
-                <p>GAMEDEV</p>
+                <p>DESENVOLVIMENTO WEB</p>
+                <h2>Aplicações, ferramentas e produtos web</h2>
+                <span class="categoryDescription">
+                    Sistemas que misturam interface, organização de dados e necessidades reais,
+                    desde ferramentas pessoais até projetos voltados para pequenos negócios.
+                </span>
+            </div>
+        </div>
+
+        <article class="projectFeature">
+            <div class="projectMedia">
+                <img class="projectArt systemaArt" src="assets/project-rpg-system.webp" alt="Logo do RPG System">
+            </div>
+
+            <div class="projectContent">
+                <div class="projectHead">
+                    <h3>RPG System</h3>
+                    <span class="projectLine"></span>
+                </div>
+
+                <div class="projectPanel">
+                    <p>
+                        Plataforma web que nasceu da minha própria rotina como mestre de RPG. O sistema reúne
+                        fichas de personagem, campanhas, Combat Tracker, Monstropédia, catálogos de magias e itens,
+                        geradores e ferramentas de gerenciamento de conteúdo. É um projeto grande e modular,
+                        construído para resolver problemas reais de preparação e condução de sessões.
+                    </p>
+
+                    <div class="projectPanelFooter">
+                        <div class="projectTags2">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JSON</span>
+                            <span>RPG Tools</span>
+                        </div>
+
+                        <a class="projectAction" href="https://j-tabosa.github.io/RPG-Systema/" target="_blank" rel="noopener noreferrer">
+                            abrir sistema
+                            <span>+</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="projectFeature reverse">
+            <div class="projectMedia">
+                <img src="assets/inove.png" alt="Projeto AlinartBase">
+            </div>
+
+            <div class="projectContent">
+                <div class="projectHead">
+                    <h3>AlinartBase</h3>
+                    <span class="projectLine"></span>
+                </div>
+
+                <div class="projectPanel">
+                    <p>
+                        Catálogo digital criado para a Alinart: Artes & Cia, pequeno negócio de produtos
+                        personalizados. A aplicação trabalha catálogo, busca, filtros, carrinho persistente
+                        e preparação de pedidos para WhatsApp. O foco é oferecer uma experiência simples para
+                        o cliente e uma base fácil de evoluir para administração de produtos e relatórios.
+                    </p>
+
+                    <div class="projectPanelFooter">
+                        <div class="projectTags2">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>E-commerce</span>
+                            <span>WhatsApp</span>
+                        </div>
+
+                        <a class="projectAction" href="https://j-tabosa.github.io/AlinartBase/" target="_blank" rel="noopener noreferrer">
+                            abrir catálogo
+                            <span>+</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="compactProjects">
+            <div class="compactProjectsHeader">
+                <span>OUTRO PROJETO</span>
+                <p>Uma ferramenta pessoal construída a partir de uma necessidade do meu próprio dia a dia.</p>
+            </div>
+
+            <a class="compactProject" href="https://j-tabosa.github.io/Agenda-Financeira-MOB-/" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <strong>Agenda Financeira</strong>
+                    <p>PWA mobile-first para registrar gastos, entradas, cartões, reservas e projeções financeiras sem integração bancária.</p>
+                </div>
+                <div class="compactTags">
+                    <span>JavaScript</span><span>PWA</span><span>Mobile-first</span><span>Finanças</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    
+    <div class="categoryTransition">
+        <span>02</span>
+        <div>
+            <small>PRÓXIMA ÁREA</small>
+            <h2>Jogos</h2>
+            <p>De aplicações e interfaces para experiências interativas, protótipos e sistemas de gameplay.</p>
+        </div>
+        <i></i>
+    </div>
+
+<section class="projectCategoryBlock" id="gamedev">
+        <div class="projectCategoryHeader">
+            <span>02</span>
+            <div>
+                <p>JOGOS & GAMEDEV</p>
                 <h2>Jogos, protótipos e experiências interativas</h2>
                 <span class="categoryDescription">
                     Projetos em Godot que uso para explorar gameplay, narrativa, level design,
@@ -187,243 +304,16 @@
         </div>
     </section>
 
-    <div class="categoryTransition">
-        <span>02</span>
-        <div>
-            <small>PRÓXIMA ÁREA</small>
-            <h2>WebDev</h2>
-            <p>De mecânicas jogáveis para interfaces, ferramentas e sistemas pensados para uso real.</p>
-        </div>
-        <i></i>
-    </div>
-
-    <section class="projectCategoryBlock" id="webdev">
-        <div class="projectCategoryHeader">
-            <span>02</span>
-            <div>
-                <p>WEBDEV</p>
-                <h2>Aplicações, ferramentas e produtos web</h2>
-                <span class="categoryDescription">
-                    Sistemas que misturam interface, organização de dados e necessidades reais,
-                    desde ferramentas pessoais até projetos voltados para pequenos negócios.
-                </span>
-            </div>
-        </div>
-
-        <article class="projectFeature">
-            <div class="projectMedia">
-                <img class="projectArt systemaArt" src="assets/project-rpg-system.webp" alt="Logo do RPG System">
-            </div>
-
-            <div class="projectContent">
-                <div class="projectHead">
-                    <h3>RPG System</h3>
-                    <span class="projectLine"></span>
-                </div>
-
-                <div class="projectPanel">
-                    <p>
-                        Plataforma web que nasceu da minha própria rotina como mestre de RPG. O sistema reúne
-                        fichas de personagem, campanhas, Combat Tracker, Monstropédia, catálogos de magias e itens,
-                        geradores e ferramentas de gerenciamento de conteúdo. É um projeto grande e modular,
-                        construído para resolver problemas reais de preparação e condução de sessões.
-                    </p>
-
-                    <div class="projectPanelFooter">
-                        <div class="projectTags2">
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JSON</span>
-                            <span>RPG Tools</span>
-                        </div>
-
-                        <a class="projectAction" href="https://j-tabosa.github.io/RPG-Systema/" target="_blank" rel="noopener noreferrer">
-                            abrir sistema
-                            <span>+</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="projectFeature reverse">
-            <div class="projectMedia">
-                <img src="assets/inove.png" alt="Projeto AlinartBase">
-            </div>
-
-            <div class="projectContent">
-                <div class="projectHead">
-                    <h3>AlinartBase</h3>
-                    <span class="projectLine"></span>
-                </div>
-
-                <div class="projectPanel">
-                    <p>
-                        Catálogo digital criado para a Alinart: Artes & Cia, pequeno negócio de produtos
-                        personalizados. A aplicação trabalha catálogo, busca, filtros, carrinho persistente
-                        e preparação de pedidos para WhatsApp. O foco é oferecer uma experiência simples para
-                        o cliente e uma base fácil de evoluir para administração de produtos e relatórios.
-                    </p>
-
-                    <div class="projectPanelFooter">
-                        <div class="projectTags2">
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>E-commerce</span>
-                            <span>WhatsApp</span>
-                        </div>
-
-                        <a class="projectAction" href="https://j-tabosa.github.io/AlinartBase/" target="_blank" rel="noopener noreferrer">
-                            abrir catálogo
-                            <span>+</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <div class="compactProjects">
-            <div class="compactProjectsHeader">
-                <span>OUTRO PROJETO</span>
-                <p>Uma ferramenta pessoal construída a partir de uma necessidade do meu próprio dia a dia.</p>
-            </div>
-
-            <a class="compactProject" href="https://j-tabosa.github.io/Agenda-Financeira-MOB-/" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <strong>Agenda Financeira</strong>
-                    <p>PWA mobile-first para registrar gastos, entradas, cartões, reservas e projeções financeiras sem integração bancária.</p>
-                </div>
-                <div class="compactTags">
-                    <span>JavaScript</span><span>PWA</span><span>Mobile-first</span><span>Finanças</span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <div class="categoryTransition">
-        <span>03</span>
-        <div>
-            <small>PRÓXIMA ÁREA</small>
-            <h2>Estudos</h2>
-            <p>Projetos acadêmicos e colaborativos usados para experimentar frameworks, arquitetura e trabalho em equipe.</p>
-        </div>
-        <i></i>
-    </div>
-
-    <section class="projectCategoryBlock" id="estudos">
-        <div class="projectCategoryHeader">
-            <span>03</span>
-            <div>
-                <p>ESTUDOS</p>
-                <h2>Projetos acadêmicos e colaborativos</h2>
-                <span class="categoryDescription">
-                    Trabalhos feitos para aprender tecnologias novas, dividir responsabilidades em equipe
-                    e aplicar conceitos de desenvolvimento em projetos maiores.
-                </span>
-            </div>
-        </div>
-
-        <article class="projectFeature">
-            <div class="projectMedia">
-                <img src="assets/IFS.jpg" alt="Projeto Final">
-            </div>
-
-            <div class="projectContent">
-                <div class="projectHead">
-                    <h3>Projeto Final</h3>
-                    <span class="projectLine"></span>
-                </div>
-
-                <div class="projectPanel">
-                    <p>
-                        Projeto colaborativo de portfólio desenvolvido em equipe, reunindo os perfis dos integrantes
-                        em uma única experiência web. O trabalho envolveu estruturação das páginas, navegação entre
-                        portfólios, adaptação responsiva e alinhamento visual entre partes desenvolvidas por pessoas
-                        diferentes, servindo como prática de integração e organização em grupo.
-                    </p>
-
-                    <div class="projectPanelFooter">
-                        <div class="projectTags2">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Responsivo</span>
-                            <span>Equipe</span>
-                        </div>
-
-                        <a class="projectAction" href="https://j-tabosa.github.io/ProjetoFinal/" target="_blank" rel="noopener noreferrer">
-                            abrir projeto
-                            <span>+</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="projectFeature reverse">
-            <div class="projectMedia">
-                <img src="assets/banner.jpg" alt="Projeto AngularFinal">
-            </div>
-
-            <div class="projectContent">
-                <div class="projectHead">
-                    <h3>AngularFinal</h3>
-                    <span class="projectLine"></span>
-                </div>
-
-                <div class="projectPanel">
-                    <p>
-                        Aplicação desenvolvida em equipe para trabalhar cadastro e gerenciamento de atletas,
-                        corridas e inscrições. O projeto serviu para praticar a estrutura do Angular na prática,
-                        separando responsabilidades em components, models, services e rotas e conectando essas
-                        partes em um fluxo único de aplicação.
-                    </p>
-
-                    <div class="projectPanelFooter">
-                        <div class="projectTags2">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>Components</span>
-                            <span>Services</span>
-                            <span>Equipe</span>
-                        </div>
-
-                        <a class="projectAction" href="https://github.com/joaovsouza318-gif/AngularFinal" target="_blank" rel="noopener noreferrer">
-                            ver repositório
-                            <span>+</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <div class="compactProjects">
-            <div class="compactProjectsHeader">
-                <span>OUTRO PROJETO</span>
-                <p>Projeto de estudo focado em uma funcionalidade específica dentro de um e-commerce maior.</p>
-            </div>
-
-            <a class="compactProject" href="https://github.com/joaovsouza318-gif/LojaX-Carrinho" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <strong>LojaX — Carrinho</strong>
-                    <p>Módulo de carrinho de um e-commerce em Angular, com foco em interface, fluxo do usuário e integração com a aplicação.</p>
-                </div>
-                <div class="compactTags">
-                    <span>Angular</span><span>TypeScript</span><span>E-commerce</span><span>UX</span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <div class="projectsEndNote">
+    
+<div class="projectsEndNote">
         <p>Mais experimentos e repositórios continuam disponíveis no GitHub e os jogos publicados ficam no Itch.io.</p>
         <div>
             <a href="https://github.com/J-Tabosa?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a href="https://kammish.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io ↗</a>
         </div>
     </div>
+
+
 
 </main>
 
