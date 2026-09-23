@@ -1177,3 +1177,29 @@ html {
         align-items: flex-start;
     }
 }
+
+
+/* PROJECT ART ASSET FIT */
+.projectMedia img.projectArt {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.drownedArt,
+.cherryArt {
+    object-fit: cover;
+    object-position: center;
+}
+
+.killHeroArt {
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.systemaArt {
+    object-fit: contain;
+    object-position: center;
+    background: #03050a;
+    padding: 12px;
+}
