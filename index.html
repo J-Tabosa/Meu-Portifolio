@@ -4,165 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de João Victor Tabosa — Analista de Sistemas, desenvolvedor web e GameDev.">
-    <title>João Victor Tabosa | Portfólio</title>
+    <title>Portfólio | João Victor Tabosa</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="homePage">
+<body>
 
-<header class="homeHeader">
-    <nav class="homeNav">
-        <a class="homeBrand" href="index.html">JVT<span>.</span></a>
-
-        <div class="homeNavLinks">
-            <a href="description.html">Pessoal</a>
-            <a href="profissional.html">Profissional</a>
-            <a href="history.html">Acadêmico</a>
-            <a href="projects.html">Projetos</a>
+<header>
+    <div class="profileInit">
+        <div class="heroText">
+            <span class="heroEyebrow">ANALISTA DE SISTEMAS • GAMEDEV • DESENVOLVEDOR</span>
+            <h1>
+                Olá Mundo! Me chamo João Victor Tabosa, sou Analista de Sistemas e GameDev.
+                Este é o espaço onde reúno um pouco da minha trajetória e do que gosto de construir.
+            </h1>
+            <div class="heroActions">
+                <a class="heroButton primary" href="projects.html">Ver meus projetos</a>
+                <a class="heroButton" href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
         </div>
+        <img src="assets/foto.jpg" alt="Foto de João Victor">
+    </div>
 
-        <a class="navGithub" href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">
-            GitHub ↗
-        </a>
+    <nav class="navigationBar">
+        <a href="description.html">Pessoal</a>
+        <a href="profissional.html">Profissional</a>
+        <a href="history.html">Acadêmico</a>
+        <a href="projects.html">Projetos</a>
+        <a href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
 </header>
 
-<main class="homeShell">
+<main>
+    <section class="conteudoPrincipal" aria-label="Áreas do portfólio">
 
-    <section class="homeHero">
-        <div class="heroBlock heroIntro">
-            <span class="blockNumber">PORTFÓLIO / 2026</span>
+        <a href="description.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Pessoal</h2>
 
-            <div class="heroCopy">
-                <p class="helloLine">Olá, mundo.</p>
-                <h1>João Victor<br>Tabosa.</h1>
+                <div class="imageBox">
+                    <img src="assets/godot.jpg" alt="Godot Engine">
+                </div>
 
-                <p class="heroDescription">
-                    Analista de Sistemas, desenvolvedor e GameDev. Gosto de transformar ideias em
-                    sistemas, interfaces e experiências jogáveis.
-                </p>
-            </div>
-
-            <div class="heroQuickLinks">
-                <a href="projects.html">Explorar projetos <span>→</span></a>
-                <a href="https://kammish.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io <span>↗</span></a>
-            </div>
-        </div>
-
-        <div class="heroBlock heroPortrait">
-            <img src="assets/foto.jpg" alt="João Victor Tabosa">
-            <div class="portraitLabel">
-                <span>ARACAJU / SE</span>
-                <span>DEV + GAMEDEV</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="homeBento" aria-label="Áreas do portfólio">
-
-        <a href="description.html" class="homeTile tilePersonal">
-            <div class="tileTop">
-                <span>01</span>
-                <span class="tileArrow">↗</span>
-            </div>
-
-            <div>
-                <p class="tileEyebrow">SOBRE MIM</p>
-                <h2>Pessoal</h2>
                 <p>
-                    Jogos, RPG de mesa, arte, narrativa e as coisas que fazem parte de quem eu sou
-                    fora do currículo.
+                    Um pouco sobre quem eu sou fora do currículo: meus interesses, criação de jogos,
+                    RPG de mesa, arte, narrativa e as coisas que me fizeram escolher trabalhar com tecnologia.
                 </p>
-            </div>
-
-            <div class="tileImage">
-                <img src="assets/godot.jpg" alt="Desenvolvimento de jogos">
-            </div>
+            </section>
         </a>
 
-        <a href="profissional.html" class="homeTile tileProfessional">
-            <div class="tileTop">
-                <span>02</span>
-                <span class="tileArrow">↗</span>
-            </div>
+        <a href="profissional.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Profissional</h2>
 
-            <div>
-                <p class="tileEyebrow">EXPERIÊNCIA</p>
-                <h2>Profissional</h2>
+                <div class="imageGroup">
+                    <img src="assets/inove.png" alt="Logo iNove System">
+                    <img src="assets/suporte.webp" alt="Suporte de TI">
+                </div>
+
                 <p>
-                    Suporte, atendimento, automação, banco de dados e desenvolvimento aplicados
-                    a problemas reais.
+                    Minha experiência profissional, ferramentas com as quais já trabalhei e habilidades
+                    desenvolvidas em suporte, programação, banco de dados e atendimento.
                 </p>
-            </div>
-
-            <div class="miniVisual">
-                <span>PYTHON</span>
-                <span>SQL</span>
-                <span>WEB</span>
-                <span>SUPORTE</span>
-            </div>
+            </section>
         </a>
 
-        <a href="history.html" class="homeTile tileAcademic">
-            <div class="tileTop">
-                <span>03</span>
-                <span class="tileArrow">↗</span>
-            </div>
+        <a href="history.html" class="linkCard">
+            <section class="card">
+                <h2>Perfil Acadêmico</h2>
 
-            <div class="academicLogo">
-                <img src="assets/IFS.jpg" alt="Instituto Federal de Sergipe">
-            </div>
+                <div class="imageBox">
+                    <img src="assets/IFS.jpg" alt="Instituto Federal de Sergipe">
+                </div>
 
-            <div>
-                <p class="tileEyebrow">FORMAÇÃO</p>
-                <h2>Acadêmico</h2>
                 <p>
-                    ADS, monitoria em Banco de Dados, pesquisa PIBIC e publicação acadêmica.
+                    Minha formação, monitoria em Banco de Dados, experiência em pesquisa e os projetos
+                    acadêmicos que fizeram parte da minha evolução na área.
                 </p>
-            </div>
+            </section>
         </a>
 
-        <a href="projects.html" class="homeTile tileProjects">
-            <div class="tileTop">
-                <span>04</span>
-                <span class="tileArrow">↗</span>
-            </div>
+        <a href="projects.html" class="linkCard">
+            <section class="card">
+                <h2>Projetos Pessoais</h2>
 
-            <div>
-                <p class="tileEyebrow">O QUE EU CONSTRUO</p>
-                <h2>Projetos<br>Pessoais</h2>
+                <div class="imageBox">
+                    <img src="assets/banner.jpg" alt="Projetos pessoais de João Victor">
+                </div>
+
                 <p>
-                    GameDev, WebDev e estudos reunidos em uma vitrine própria, com projetos
-                    publicados e trabalhos em desenvolvimento.
+                    Jogos, aplicações web, ferramentas pessoais e projetos de estudo que fui construindo
+                    ao longo do tempo. Organizei tudo em três áreas: GameDev, WebDev e Estudos.
                 </p>
-            </div>
-
-            <div class="projectCategories">
-                <span>GAMEDEV</span>
-                <span>WEBDEV</span>
-                <span>ESTUDOS</span>
-            </div>
+            </section>
         </a>
 
     </section>
-
-    <section class="homeContact">
-        <div>
-            <span class="contactEyebrow">CONTATO</span>
-            <h2>Quer conversar sobre um projeto?</h2>
-        </div>
-
-        <div class="contactActions">
-            <a href="mailto:jtabosa028@gmail.com">E-mail ↗</a>
-            <a href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href="https://kammish.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io ↗</a>
-        </div>
-    </section>
-
 </main>
 
-<footer class="homeFooter">
-    <span>João Victor Tabosa</span>
-    <span>Portfólio pessoal • 2026</span>
+<footer class="footerContato">
+
+    <div class="footerLeft">
+        <p>📞 Telefone: (79) 98803-0856</p>
+        <p>💻 GitHub: <a href="https://github.com/J-Tabosa" target="_blank" rel="noopener noreferrer">github.com/J-Tabosa</a></p>
+        <p>📸 Instagram: <a href="https://instagram.com/el_tabosa" target="_blank" rel="noopener noreferrer">@el_tabosa</a></p>
+        <p>🐦 Twitter: <a href="https://twitter.com/el_tabosa" target="_blank" rel="noopener noreferrer">@el_tabosa</a></p>
+        <p>👾 Itch.io: <a href="https://kammish.itch.io/" target="_blank" rel="noopener noreferrer">kammish.itch.io</a></p>
+    </div>
+
+    <div class="footerRight">
+        <h3>Entre em contato</h3>
+
+        <form action="mailto:jtabosa028@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
 </footer>
 
 </body>
